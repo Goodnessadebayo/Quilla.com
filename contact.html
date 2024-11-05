@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Stock Trading</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Favicons -->
+<!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Bootstrap/css/headers.css">
+  <link rel="stylesheet" href="assets/css/addtocart.css">
+  <link rel="stylesheet" href="assets/css/search.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
+    	
+    <link href="Bootstrap/css/navbar.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body style="background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(assets/img/services-bg.jpg) fixed center center;, background-size:cover;">
+  
+  <!-- ======= Header ======= -->
+<header class="mb-2" id="head"
+  data-aos-delay="300" data-aos="fade-down">
+  <nav class="navbar navbar-expand-md bg-danger fixed-top" aria-label="Twelfth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fs-6"></span>
+        </button>
+      <span class="ms-3 fs-2 text-light fw-bolder"><i class="bx bx-cloud text-light"></i><span class="text-warning fs-1">Q</span>uîlla</span>
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample10">
+          <ul class="navbar-nav">
+            <li class="nav-item my-1 ">
+              <a class="nav-link fw-bold" aria-current="page" href="index-2.html">Home</a>
+            </li>
+            <li class="nav-item my-1 ">
+              <!-- Display link based on subscription status -->
+      <a id="" href="SellerHQ.html" class="nav-link fw-bold">Seller HQ</a>
+            </li>
+            
+            <li class="nav-item dropdown my-1">
+              <a class="nav-link dropdown-toggle fw-bold" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Help</a>
+              <ul class="dropdown-menu bg-danger mt-md-3" aria-labelledby="dropdown10" >
+                <li><a class="dropdown-item " href="contact.html#help us.">Help Center</a></li>
+                <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                <li><a class="dropdown-item bg-warning text-white" href="contact.html#contact us">Contact Us</a></li>
+                <li><a class="dropdown-item" href="contact.html#helpUsAccordion">Customer support</a></li>
+              </ul>
+            </li>
+            <li class="nav-item my-1">
+              <a class="nav-link fw-bold"><!-- Section for Sign in/Login and Logout Button -->
+<!-- Sign In Button (Visible if user is not signed in) -->
+<div id="login-btn" data-bs-toggle="modal" data-bs-target="#modalSignin" class="">
+    Sign in/Login
+</div>
+
+<!-- Logout Button (Visible if user is signed in) -->
+<div id="logout-btn" onclick="showLogoutModal()" class="" style="display: none;">
+    Logout
+</div></a>          
+           </li>
+            <li class="nav-item my-1">
+           <a href="FAQs.html" class="nav-link fw-bold">FAQs</a></li>
+                 <li class="nav-item">
+           <div class="nav-link fw-bold">
+          <span class="rounded-1 cart" id="toggleNav" ><i class="bx bxs-shopping-bag  text-warning px-1"></i> <p id="count" class="mt-3 me-1">0</p></span></div></li>
+          <li class="nav-item my-1 col-12 col-md-2">
+   <!-- Search Form -->
+    <form id="searchForm" class="d-flex">
+    <input type="search" id="searchInput" placeholder="Search..." class="form-control" aria-label="Search">
+    <button class="btn btn-outline-warning fs-6" type="submit">Search</button>
+</form>
+<div id="searchResults"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="side" class="side">
+        <div class="sidebar">
+            <div class="head">
+                <p>My Cart</p>
+            </div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">₦ 0.00</h2>
+            </div>
+            <form id="cartForm" action="https://formsubmit.co/olajideadebayo78@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Cart Purchase">
+                <div id="cartFormInputs"></div>
+                <button class="btn btn-success w-100" type="submit">Purchase</button>
+            </form>
+        </div>
+    </div>
+    </nav>
+       </header><br><br>
+   <!-- End Header -->
+   	 <!-- Search Results Section -->
+    <div id="searchResults"></div>
+</head>
+<body>
+<!------------------------------------   help us page.                     ----------------------------------------->	 
+<div class="container my-5 py-5 bg-white rounded-3 px-md-4" id="help us" data-aos-delay="350" data-aos="fade-up">
+  <h1 class="text-center fw-bolder">Help Center</h1>
+  <p class="text-center">Find answers to the most common questions below.</p>
+
+  <!-- FAQ Section -->
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          How do I create a trading account?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          To create a trading account, go to the registration page and fill in your personal details, including ID verification and banking information.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          What are the trading hours?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Stock market trading hours typically run from 9:30 AM to 4:00 PM EST, Monday through Friday. Some markets may offer pre-market and after-hours trading.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          How do I deposit funds?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          You can deposit funds by linking your bank account or using credit/debit cards through the "Subscribe" section in your sellerHQ.
+        </div>
+      </div>
+    </div>
+
+     
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          What are the fees for trading?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We charge a small commission on each trade. You can find the detailed fee structure in our "Fees" section under your sellerHQ account.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Help Us Section -->
+    <div class="container py-5 bg-white my-5 px-md-4" data-aos-delay="350" data-aos="fade-down">
+        <h1 class="text-center">Help Us Grow!</h1>
+        <p class="lead text-center">We’ve answered your most common questions and provided simple ways to support our platform. Your help makes a difference!</p>
+
+        <!-- Accordion Section for FAQ and Leads -->
+        <div class="accordion" id="helpUsAccordion">
+
+            <!-- Spread the Word -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How can I help spread the word?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#helpUsAccordion">
+                    <div class="accordion-body">
+                        <p>Sharing our platform with others is a great way to help us grow. Here are some ideas:</p>
+                        <ul>
+                            <li>Share our website on your social media platforms.</li>
+                            <li>Recommend us to friends, family, or colleagues who trade stocks or are looking to sell products online.</li>
+                            <li>Post about your experience with us on forums, communities, and networking platforms.</li>
+                        </ul>
+                        <p>Each mention helps us reach a broader audience and grow our community.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leave a Review -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I leave a review?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#helpUsAccordion">
+                    <div class="accordion-body">
+                        <p>Your feedback is crucial in helping us improve and grow. Here’s how you can leave a review:</p>
+                        <ul>
+                            <li>Visit our <strong><a href="#">Feedback Page</a></strong> or email us directly at <strong>help@Quilla.com</strong>.</li>
+                            <li>Share your experience on review platforms like Trustpilot, Google Reviews, or other relevant industry-specific websites.</li>
+                            <li>Let us know what you enjoyed about the platform, and any areas you think we can improve.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Provide Feedback -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How can I provide feedback or suggestions?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#helpUsAccordion">
+                    <div class="accordion-body">
+                        <p>We’re constantly looking to improve, and your feedback helps us do that. Here’s how you can share your suggestions:</p>
+                        <ul>
+                            <li>Email us at <strong>help@Quilla.com</strong> with any thoughts or improvements you’d like to see.</li>
+                            <li>Fill out our <strong><a href="#">Feedback Form</a></strong>, and let us know what features or services would enhance your experience.</li>
+                            <li>Join our community discussions and provide insights on how we can grow together.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Become a Vendor -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How can I become a vendor on your platform?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#helpUsAccordion">
+                    <div class="accordion-body">
+                        <p>Joining our platform as a vendor is easy! Here’s how you can start:</p>
+                        <ul>
+                            <li>Sign up through our <strong><a href="sellerHQ/sell on Quîlla.html">Vendor Registration Page</a></strong> to create an account.</li>
+                            <li>List your products or services and start selling to a wide audience.</li>
+                            <li>Reach out to our support team if you need assistance setting up your shop or using the platform.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Our Community -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How can I support the community?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#helpUsAccordion">
+                    <div class="accordion-body">
+                        <p>There are many ways to support the Quîlla community:</p>
+                        <ul>
+                            <li>Engage with other traders, vendors, and customers on our platform by joining discussions and offering advice.</li>
+                            <li>Promote other vendors by sharing their products and services within your network.</li>
+                            <li>Be an active participant in the community, whether it’s by answering questions or providing feedback to others.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+ <!-- Help Us Section -->
+    <div class="container my-5">
+        <p class="lead text-center fw-bold">Thank you for being part of our stock trading and vendor marketplace community. Your support helps us grow and improve.</p>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-1">
+                <h3>How You Can Help</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>1. Spread the Word</strong>  
+                        <p>If you’ve had a great experience, let others know! Share our platform with friends, family, and colleagues who may benefit from our services.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>2. Leave a Review</strong>  
+                        <p>Your feedback helps us grow. Leave a review about your experience with our platform – whether it’s about stock trading, our marketplace, or customer service.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>3. Provide Feedback</strong>  
+                        <p>If you have suggestions or ideas for improvement, let us know! Your insights are invaluable in shaping our platform’s future.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>4. Become a Vendor</strong>  
+                        <p>Interested in selling your goods on our platform? Join as a vendor and reach a broader audience. We’ll provide the tools to get you started.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>5. Support Our Community</strong>  
+                        <p>Engage with other users on the platform. Help build a strong, collaborative environment where everyone benefits from shared knowledge and experiences.</p>
+                    </li>
+                </ul>
+
+                <h3 class="mt-4">Why Your Help Matters</h3>
+                <p>Your support helps us maintain and improve the platform, bringing new features, better tools, and enhanced security. Together, we can build a thriving marketplace for stock traders and vendors.</p>
+
+                <h3>Get In Touch</h3>
+                <p>If you’d like to get involved, have suggestions, or simply want to learn more, contact us at:</p>
+                <ul class="list-unstyled">
+                    <li><strong>Email:</strong> Quîlla@gmail.com</li>
+                    <li><strong>Phone:</strong> +2348164388128</li>
+                    <li><strong>Support Center:</strong> <a href="#"> help@Quilla.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+     
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+ 
+
+
+
+<!-------------------------------      contact us page.            --------------------------------->
+<div class="container my-5 py-5 bg-white rounded-3 px-md-4" id="contact-us" data-aos-delay="350" data-aos="fade-down">
+  <h1 class="text-center fw-bolder">Contact Us</h1>
+  <p class="text-center">We are here to help you with any inquiries or issues you may have.</p>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <!-- Contact Form -->
+      <form id="contactForm" action="https://formsubmit.co/olajideadebayo78@gmail.com" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" 
+name="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" name="email"  required>
+        </div>
+
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" 
+name="subject" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" name="message" rows="5" required></textarea>
+        </div>
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="btn btn-danger w-100">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+     
+<!-- Optional: Script to handle form submission (can be replaced with actual backend integration) -->
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+     // Prevent form from submitting to a server by default
+  	 
+    alert('Thank you for reaching out. We will get back to you soon!');
+
+    // Reset form after submission
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+ 
+
+	
+	
+	
+
+<!--------   modal signin ------>  
+<div class="modal fade mt-5 message-alert" id="modalSignin" data-bs-backdrop="satic" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSignin" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header p-4 pb-4 border-bottom-0">
+        <!-- <h5 class="modal-title">Modal title</h5> -->
+        <p class="fw-bold mb-0 fs-1">Welcome Back!</p>
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+ 
+<div class="modal-body py-4 pt-0">
+     <form id="signinForm">
+     	<div class="form-floating mb-3">
+        <input type="text" id="signinUsername" placeholder="Username" class="form-control rounded-3" required>
+ <label for="floatingInput">Username</label>
+           <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-user" id="toggleIcon"></i></span> 
+              </div>
+        <div class="form-floating mb-3">
+        <input type="password" id="signinPassword" placeholder="Password" class="form-control rounded-3" required>
+<label for="floatingInput"> Password</label>
+          <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-lock" id="toggleIcon"></i></span> 
+              </div>
+        <a data-bs-toggle="modal" data-bs-target="#modalForgottenpassword" class="text-decoration-none">Forgot your password?</a>
+        <div class="my-2 ">
+          <input type="checkbox" class="mt-1" required>
+                <label class="form-check-label" for="termsCheck">I agree to the <a href="about us.html#Terms and conditions">terms and conditions</a></label>
+            </div>
+        <input type="submit" class="btn btn-warning col-12 py-2 fs-4 fw-bolder rounded-3 mt-2" value="Login">
+          
+          <hr class="my-4 text-dark">
+          	 
+             <a data-bs-toggle="modal" data-bs-target="#modalGenerate" class="w-100 py-2 btn">Create an Account!</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-----  modal conf for forgotten password ------>
+<div class="modal fade mt-5 message-alert" id="modalForgottenpassword" data-bs-backdrop="satic" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalForgottenpassword" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header p-4 pb-4 border-bottom-0">
+        <!-- <h5 class="modal-title">Modal title</h5> -->
+        <p class="fw-bold mb-0 fs-2">Forgot Your Password?</p>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+  <p class="px-3 ">We get it, stuff happens. Just enter your username below to reset your password.</p>
+      <div class="modal-body py-4 pt-0">
+        <form id="forgotPasswordForm">
+        <div class="form-floating mb-3">
+        <input type="text" id="forgotUsername" placeholder="Username" class="form-control rounded-3" required>
+<label for="floatingInput">Username</label>
+             <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-user" id="toggleIcon"></i></span> 
+              </div>
+         <div class="form-floating mb-3">
+        <input type="password" id="newPassword" placeholder="New Password" class="form-control rounded-3" required>
+<label for="floatingInput">New Password</label>   <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-lock" id="toggleIcon"></i></span> 
+              </div>
+        <button type="submit" class="btn btn-outline-warning w-100 py-2 fs-5 fw-bolder rounded-3 mt-2">Reset Password</button>
+         
+        </form>
+          <hr class="my-4 text-dark">
+          	 
+             <a data-bs-toggle="modal" data-bs-target="#modalGenerate" class="w-100 py-2 btn">Create an Account!</a>
+             <a data-bs-toggle="modal" data-bs-target="#modalSignin" class="w-100 py-2 btn">Already have an Account? Login!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---- modal conf for generating account --->
+<div class="modal fade mt-5 message-alert" id="modalGenerate" data-bs-backdrop="satic" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalGenerate" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header p-4 pb-4 border-bottom-0">
+        <!-- <h5 class="modal-title">Modal title</h5> -->
+        <p class="fw-bold mb-0 fs-1">Create an Account!</p>
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body pt-0 mb-5">
+      <form id="registerForm">
+       <div class="form-floating mb-3">
+        <input type="text" id="firstName" placeholder="First Name" class="form-control rounded-3" required>
+<label for="floatingPassword">First name</label>   <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-user-pin" id="toggleIcon"></i></span>  
+              </div>
+        <div class="form-floating mb-3">
+        <input type="text" id="lastName" placeholder="Last Name" class="form-control rounded-3" required>
+<label for="floatingPassword">Last name</label>   <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-user-pin" id="toggleIcon"></i></span>   
+              </div>
+        <div class="form-floating mb-3">
+        <input type="email" id="email" placeholder="Email" class="form-control rounded-3" required>
+<label for="floatingInput">Email address</label>   <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-envelope" id="toggleIcon"></i></span> 
+              </div>
+        <div class="form-floating mb-3">
+        <input type="text" id="phoneNumber" placeholder="Phone Number" class="form-control rounded-3" required>
+<label for="floatingInput">Phone number</label>   <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bi bi-phone" id="toggleIcon"></i></span> 
+              </div>
+        <div class="form-floating mb-3">
+        <input type="text" id="username" placeholder="Username" class="form-control rounded-3" required>
+<label for="floatingInput">Username</label>
+            <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-user" id="toggleIcon"></i></span> 
+              </div>
+              
+        <div class="form-floating mb-3">
+        <input type="password" id="password" placeholder="Password" class="form-control rounded-3" required>
+       <label for="floatingInput">Password</label>   <span id="" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                <i class="bx bx-lock" id="toggleIcon"></i></span> 
+              </div>
+        <a data-bs-toggle="modal" data-bs-target="#modalForgottenpassword" class="text-decoration-none">Forgot your password?</a>
+        <input type="submit" class="btn btn-outline-warning w-100 py-2 fs-5 fw-bolder rounded-3 mt-2" value="Register Account">
+         
+    </form>
+          <hr class="my-1 text-dark">          	 
+             <a data-bs-toggle="modal" data-bs-target="#modalSignin" class="w-100 py-2 mb-2 btn">Already have an Account? Login!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     <span class="text-light fs-3"><a href="tel:+2348164388128;" class="chat d-flex align-items-center justify-content-center">
+<b class="log">Help <span class="bi bi-headset"></span></b>
+<i class="bi bi-headset"></i></a>
+ </span>
+
+    <!-- Footer -->
+ 	<Footer id="footer"  class="footer">
+ 	<div class=" container-fluid">
+      <div data-aos="fade-up">
+ 	 <div class="row mb-3">	
+ 	  <div class="col-12 col-md-3 social-links px-4">
+                <i class="bi bi-envelope"></i>
+                <strong>EMAIL SUPPORT</strong>
+                <p>help@Quilla.com</p>
+              </div>
+       <div class="col-12 col-md-3 social-links px-4">
+                <i class="bi bi-phone"></i>
+                <strong>PHONE SUPPORT:</strong>
+                <p>+234816 438 8128</p>
+              </div>
+       <div class="col-12 col-md-3 social-links px-4">
+                <i class="bi bi-whatsapp"></i>
+                <strong>WHATSAPP</strong>
+                <p>+234816 438 8128</p>
+              </div>
+        <div class="col-12 col-md-3 social-links px-4">
+                <strong class="fs-5">GET LATEST DEALS</strong>
+                <br><span class="fs-5">Out best promotions sent to your inbox.</span>
+              </div>
+ 	 </div>
+ 
+ <div class="row mb-2">	
+ 	  <div class="col-12 col-md-3 social-links px-4 my-3">
+                <strong class="fs-5">ABOUT QUILLA</strong>
+                <br><a href ="contact.html#contact us" class="my-2 text-muted fs-5">Contact Us</a>
+                <br><a href="about-us.html" class="my-2 text-muted fs-5">About Us</a>
+                <br><a href="index.html#Terms and conditions" class="my-2 text-muted fs-5">Terms and Conditions</a>
+              </div>
+       <div class="col-12 col-md-3 social-links px-4 my-3">
+                <strong class="fs-5">PAYMENT</strong>
+               <br><a class="my-2 text-muted fs-5">Bank transfer</a>
+                <br><a class="my-2 text-muted fs-5">Debit card</a>
+                <br><a class="my-2 text-muted fs-5">Credit card</a>
+              </div>
+       <div class="col-12 col-md-3 social-links px-4 my-3">
+                <strong class="fs-5">BUYING ON QUÎLLA</strong>
+                <br><a href="FAQs.html" class="my-2 text-muted fs-5">Buyer Safety Center</a>
+                <br><a href="FAQs.html" class="my-2 text-muted fs-5">FAQs</a>
+                <br><a href="FAQs.html" class="my-2 text-muted fs-5">Delivery</a>
+               <br><a href="FAQs.html" class="my-2 text-muted fs-5">Digital Services</a>
+              </div>
+        <div class="col-12 col-md-3 social-links px-4 my-3">
+                <strong class="fs-5">MAKE MONEY ON QUILLA</strong>
+                <br><a href ="vendors.html" class="my-2 text-muted fs-5">Become Quilla affiliate</a>
+              </div>
+ 	 </div>
+ 
+    	<div class="row justify-content-center">
+        <div class="col-md-12" style="text-align: center;">
+          <p class="copyright">
+        <div class="social-links mb-1">
+        <a href="https://x.com/i/lists/1849118166972055886" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://facebook.com/groups/954675936488340/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.youtube.com/@OlajideAdebayo-zu7bh" class="youtube"><i class="bx bxl-youtube"></i></a>
+        <a href="https://wa.me/08164388128" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://t.me/+1AFPQHpzkck3M2E0 see" class="Telegram"><i class="bx bxl-telegram"></i></a>
+      </div>
+            &copy; Copyright <strong><a href="Admin.html" class="text-dark">Quîlla Team</a></strong>. All Rights Reserved
+          </p>
+    	</div>
+</div>
+ 	</div>
+  </div>
+     </Footer>
+    
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div class="cookie-banner" id="cookieBanner">
+        <p>This website uses cookies to ensure you get the best experience. <a href="about us.html#privacy-policy">Learn more</a></p>
+        <button id="acceptCookies">Accept</button>
+    </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+ 
+ <script src="Bootstrap/js/Bootstrap.bundle.min.js"></script>
+
+      <script src="Bootstrap/js/offcanvas.js"></script>
+      <script src="assets/js/addtocart.js"></script>
+      <script src="assets/js/search.js"></script>
+      <script src="assets/js/form.js"></script>
+      <script src="assets/js/Styles.js"></script>
+      
+      <script src="Bootstrap/js/sidebars.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
