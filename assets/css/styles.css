@@ -1,0 +1,560 @@
+.logo{
+           font-size:1.5rem;
+           position: absolute;
+           margin:35px;
+           font-weight:bold;
+           color: lightslategrey;
+}
+  
+ #head{
+ 	position:relative;
+}
+
+#head a{
+ 	color:white;
+}
+
+#head a:hover{
+ 	color:gold;
+}
+
+#home{
+	padding:30px 30px;
+	
+}
+
+#home .img-fluid {
+	border:3px solid snow;
+}
+
+
+#searchForm button{
+	margin-left:0.6rem;
+}
+
+.dropdown .dropdown-menu {
+	background:crimson;
+}
+
+.dropdown .dropdown-menu li {
+	background:crimson;
+	color:white;
+}
+
+.dropdown .dropdown-menu li::after a{
+	contents:"";
+	background:crimson;
+	color:black;
+}
+
+.dropdown .dropdown-menu li:hover a{
+	background:;
+}
+
+.dropdown .dropdown-menu li::before a{
+	contents:"";
+	background:crimson;
+	color:black;
+}
+
+.cookie-banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    margin: 0;
+    padding-right: 10px;
+    display: inline;
+}
+
+.cookie-banner button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cookie-banner button:hover {
+    background-color: #45a049;
+}
+
+ .side {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background:ghostwhite;
+    backdrop-filter:blur(50px);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    align-items:center;
+    color: ;
+}
+ 
+ #cartItem{
+ 	padding-right:10px;
+ 	padding-left:10px;
+}
+
+/* side nave menu*/
+.sidenav {
+  height: 100%;
+  position: fixed;
+  width: 0; font-family: "Lato", sans-serif;
+  backdrop-filter:blur(50px);
+  box-shadow: 0 0 5px silver;
+  z-index: 9999; 
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 3.5rem;
+  left: 0;
+   background-color: ;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  transition: background-color 0.3s;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .accordion{
+	content:"";
+}
+
+.sidenav .accordion ul li{
+	z-index:4;
+}
+
+    /* Advertising */
+.Advert{
+	background: ;
+    background-size:cover; 
+	text-align:center;
+	padding:50px 50px;
+}
+
+.Advert span{
+	color:white;
+	font-size:2.7rem;
+	font-weight:900;
+	font-family:"Raleway" sans-serif;
+}
+
+.Advert h1{
+	color:white;
+	font-size:2.5rem;
+	font-weight:900 ;
+	font-family: ;
+}
+
+.Advert h2{
+	color:white;
+	font-size:1.6rem;
+	font-weight:800;
+	font-family: cursive;
+}
+
+.Advert h5{
+	color:white;
+	font-size:0.9rem;
+}
+
+.Advert .green{
+	Background:linear-gradient()
+}
+
+/* Categories*/
+.categories{
+	background:;
+	backdrop-filter:blur(50px);
+	align-items:center;
+	text-align:center;
+	padding:1.8rem;
+}
+
+.categories span{
+	background:orange;
+	font-size:2rem;
+	font-weight:900;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	color:white;
+}
+
+.categories p{
+	font-size:1.1rem;
+	font-weight:900;
+}
+
+/* Portfolio cards */
+.card0{
+	backdrop-filter:blur(50px);
+}
+
+.card-1{
+	Background-color:snow ;
+	color:;
+	text-align:;
+}
+
+.card-1 b{
+	font-size:1.5rem;
+	font-weight:700;
+}
+
+.card-1 small{
+	font-size:0.5rem;
+}
+
+.card-2{
+	Background-color:aliceblue;
+	color:;
+	text-align:;
+}
+
+.card-2 span{
+	font-size:1.4rem;
+}
+
+.card-2 small{
+	font-size:0.5rem;
+}
+
+/* What you get then Shop your way*/ 
+
+.Assured{
+	
+}
+
+.Assured h2{
+	font-size:1.5rem;
+	font-weight:900;
+}
+
+.Assured span{
+	font-size:1.3rem;
+	font-weight:light;
+	
+}
+
+/* Start Shopping From Any Where */
+.shopping{
+  padding:50px;
+}
+
+.shopping span{
+	color:white;
+	text-align:center;
+	font-size:1.7rem;
+	font-weight:900;
+}
+
+.shopping div{
+	text align: center;
+}
+
+/* facts section */
+.channels{
+	background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.channels span{
+	font-size:1.7rem;
+	font-weight:600;
+	font-family:;
+	text-align: center;
+	color:white;
+}
+
+.channels div{
+	font-size:1.3rem;
+	font-weight:600;
+}
+
+.channels p{
+	color:white;
+	font-size:1.3rem;
+	font-weight:600;
+	text-align:center;
+}
+
+.pagination{
+	float:right;
+}
+
+
+/* Sell on Quîlla */
+.Account{
+	Background:;
+}
+
+.Account .title{
+	text-align: center;
+}
+
+.Account .floatingChoice{
+	text-align:left;
+}
+
+.why-sell-on-quîlla {
+	position: relative;
+}
+
+.why-sell-on-quîlla h1{
+	text-align:center;
+	
+}
+
+.why-sell-on-quîlla .reason {
+	align:center;
+	text-align:center;
+	
+}
+
+
+/* index-2.html*/
+.Advertise{
+	background:white;
+}
+
+.Advertise a{
+	font-size:1rem;
+}
+
+.card {
+	box-shadow: 0 0 0px;
+}
+
+.card:hover {
+	box-shadow: 0 0 5px silver;
+}
+
+/* kids zone*/
+ #browsing-history{
+ 	border-top-right-radius:5px;
+     border-top-left-radius:5px;
+}
+
+ .categories{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+ .gallery {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        
+.gallery img {
+            object-fit: cover;
+            scroll-snap-align: start;
+        }
+
+/* brands */
+.brands{
+	background-color:;
+}
+
+.brands span{
+	text-align:center;
+}
+
+/* electronics */
+    /* Card styles */
+    #card {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    #card .row img{
+       margin-left:0.9rem;
+    }
+
+    /* Hidden dropdown */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      bottom: -80px;
+      width: 100%;
+      justify-content:center;
+      text-align: center;
+      z-index: 1;
+      padding: 10px 0;
+      transition: bottom 0.3s ease;
+    }
+
+    #card:hover .dropdown-content {
+      display: block;
+      bottom: 0;
+    }
+
+    .dropdown-content button {
+      margin: 0 5px;
+      font-size: 0.7rem;
+    }
+
+
+.pagination{
+	float:left;
+	margin-left:4.5rem;
+}
+
+.modal img{
+}
+
+
+/* modal form */
+.modal form{
+	padding:25px 0px;
+}
+
+.modal form input{
+	padding:15px 3px;
+}
+
+.modal a{
+	border:none;
+	outline:none;
+}
+
+.modal #signinForm #signinUsername, #signinPassword{
+	 
+}
+
+
+ 
+
+        .toggle-icon {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+/*sellerHQ database*/
+.edit-mode {
+            background-color: #f0f8ff;
+        }
+        .table-image {
+            width: 50px;
+            height: auto;
+        }
+
+
+/*Chat block*/
+ .chat{
+	position: fixed;
+    visibility:;
+    opacity: ;
+    right: 15px;
+    bottom: 105px;
+    z-index: 9999;
+    color: transparent;
+    background: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 16px;
+    border:1px solid goldenrod;
+    transition: all 0.4s;
+    box-shadow:2px 2px 655px black;
+}
+
+.chat .log{
+	visibility:;
+	opacity:;
+	position:absolute;
+    transition: all 0.4s;
+}
+
+.chat .log:hover{
+	visibility:visible;
+	opacity:1;
+    transition: all 0.4s;
+}
+
+.chat i {
+  font-size: 28px;
+  color: goldenrod;
+  line-height: 0;
+}
+
+.chat:hover {
+  color:white;
+  background: goldenrod;
+  width:100px;
+  height:45px
+}
+
+/*Admin*/
+.table th{
+	background:crimson;
+	color:white;
+}
+
+.admin{
+	 position:fixed;
+}
+
+
+.admin:hover{
+	 padding-left:0.6rem;
+}
+
+
+
+/*join Quîlla Affiliate image*/
+/* Hide the default file input */
+    #fileInput {
+       
+    }
+
+    /* Style the icon as a button */
+    .upload-icon {
+      display: inline-block;
+      width: 150px; /* Width of the icon */
+      height: 150px; /* Height of the icon */
+      background-color: #f0f0f0; /* Default background color */
+      border:5px solid aliceblue;
+      border-radius: 30%; /* Circular icon */
+      background-position: center;
+      background-size: cover;
+      color: #007bff; /* Icon color */
+      cursor: pointer;
+      text-align: center;
+      line-height: 100px; /* Center the icon vertically */
+    }
+    
+    
+.user-data{
+	border:3px solid aliceblue;
+	border-top-right-radius:3rem;
+	font-weight:700;
+	color:crimson;
+}
