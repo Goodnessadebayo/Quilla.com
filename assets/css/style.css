@@ -598,6 +598,7 @@ section {
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
+  z-index:9999;
   text-transform: uppercase;
   color: #272829;
   transition: all 0.3s ease-in-out;
